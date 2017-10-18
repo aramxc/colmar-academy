@@ -1,0 +1,159 @@
+/***************************
+* Header
+***************************/
+
+.header {
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: white;
+}
+
+#header-logo {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 24px;
+}
+
+#header-logo h1 {
+  text-transform: uppercase;
+}
+
+.nav-bar {
+  margin-right: 24px;
+}
+
+.nav-menu {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu-item {
+  display: block;
+  padding: 0 16px;
+}
+
+.flexbox-text {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+
+
+/***************************
+* Main Body
+***************************/
+
+.wrapper {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.main-content {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+#footer {
+  width: 100%;
+}
+
+
+/***************************
+* Media Queries
+***************************/
+
+@media screen and (max-width: 833px) {
+  .header {
+    display: inline-flex;
+    justify-content: space-around;
+  }
+  .hidden-mobile p {
+    display: none;
+  }
+  .nav-bar {
+    width: 100%;
+    left: 0;
+    display: flex;
+  }
+  .nav-menu {
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .menu-item {
+    display: block;
+    flex: 0 1 auto;
+  }
+  #header-logo {
+    display: none;
+  }
+}
+
+.content-left {
+  width: 100%;
+  text-align: left;
+
+}
+
+
+
+.content-left img {
+  width: 100%;
+}
+
+.flexbox-image img{
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 833px) {
+  .hidden-mobile img {
+    display: none
+  }
+  .horizontal {
+    display: inline-flex;
+  }
+  .content-left {
+    width: 60%;
+    margin-left: 24px;
+  }
+  .content-left img {
+    width: 100%;
+  }
+  .content-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .flexbox{
+    display: inline-flex;
+  }
+  .flexbox-img {
+    width: 35%;
+  }
+
+  .flexbox-text {
+    display: inline-flex;
+    flex-direction: column;
+    width: 65%;
+  }
+}
